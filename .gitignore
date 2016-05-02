@@ -1,3 +1,6 @@
+*.dat
+*.suo
+
 # Logs
 logs
 *.log
