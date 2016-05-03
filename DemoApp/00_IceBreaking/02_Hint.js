@@ -22,7 +22,7 @@ order = function(words) {
 	var result = new Array();
 
 	words.split(' ').map((word) => {
-		result[parseInt(word.replace(/\D/gi, ''))] = word;
+		result[parseInt(word.replace(******, ''))] = word;  // ****** 로 표시된 곳에 들어갈 정규식 6자리 문자
 	});
 
 	return result.reduce((a,b) => {
