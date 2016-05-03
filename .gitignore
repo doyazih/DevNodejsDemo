@@ -1,5 +1,7 @@
 *.dat
 *.suo
+*.coverage
+*.vsp
 
 # Logs
 logs

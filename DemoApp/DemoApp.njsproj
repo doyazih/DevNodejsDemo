@@ -12,7 +12,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>c7b5b5c4-ff65-47be-992f-2d32d7bc3ed6</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>05_ModuleCaching\app.js</StartupFile>
+    <StartupFile>00_IceBreaking\04_Test.js</StartupFile>
     <StartWebBrowser>False</StartWebBrowser>
     <SearchPath>
     </SearchPath>
@@ -20,7 +20,7 @@
     <OutputPath>.</OutputPath>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
-    <ProjectView>ShowAllFiles</ProjectView>
+    <ProjectView>ProjectFiles</ProjectView>
     <StartWebBrowser>false</StartWebBrowser>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -30,6 +30,13 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="00_IceBreaking\02_Hint.js" />
+    <Compile Include="00_IceBreaking\03_Answer.js" />
+    <Compile Include="00_IceBreaking\01_Quiz.js" />
+    <Compile Include="00_IceBreaking\04_Test.js">
+      <SubType>Code</SubType>
+      <TestFramework>Mocha</TestFramework>
+    </Compile>
     <Compile Include="01_CallbackPattern\app.js" />
     <Compile Include="01_CallbackPattern\db.js" />
     <Compile Include="02_ScopeChain\01_Scope\app.js" />
@@ -41,23 +48,24 @@
     <Compile Include="03_Closure\03_ClosurePrivateUseCase\app.js" />
     <Compile Include="03_Closure\04_ClosureFaultCase\appFixed.js" />
     <Compile Include="03_Closure\04_ClosureFaultCase\app.js" />
-    <Compile Include="04_ModulePattern\01_DefineGlobal\app.js" />
-    <Compile Include="04_ModulePattern\01_DefineGlobal\foo.js" />
-    <Compile Include="04_ModulePattern\02_ExportAnonymousFunction\app.js" />
-    <Compile Include="04_ModulePattern\02_ExportAnonymousFunction\bar.js" />
-    <Compile Include="04_ModulePattern\03_ExportNamedFunction\app.js" />
-    <Compile Include="04_ModulePattern\03_ExportNamedFunction\fiz.js" />
-    <Compile Include="04_ModulePattern\04_ExportAnonymousObject\app.js" />
-    <Compile Include="04_ModulePattern\04_ExportAnonymousObject\buz.js" />
-    <Compile Include="04_ModulePattern\05_ExportNamedObject\app.js" />
-    <Compile Include="04_ModulePattern\05_ExportNamedObject\baz.js" />
-    <Compile Include="04_ModulePattern\06_ExportAnonymousPrototype\app.js" />
-    <Compile Include="04_ModulePattern\06_ExportAnonymousPrototype\doo.js" />
-    <Compile Include="04_ModulePattern\07_ExportNamedPrototype\app.js" />
-    <Compile Include="04_ModulePattern\07_ExportNamedPrototype\qux.js" />
-    <Compile Include="05_ModuleCaching\app.js" />
-    <Compile Include="05_ModuleCaching\foo.js" />
-    <Compile Include="app.js" />
+    <Compile Include="05_ModulePattern\01_DefineGlobal\app.js" />
+    <Compile Include="05_ModulePattern\01_DefineGlobal\foo.js" />
+    <Compile Include="05_ModulePattern\02_ExportAnonymousFunction\app.js" />
+    <Compile Include="05_ModulePattern\02_ExportAnonymousFunction\bar.js" />
+    <Compile Include="05_ModulePattern\03_ExportNamedFunction\app.js" />
+    <Compile Include="05_ModulePattern\03_ExportNamedFunction\fiz.js" />
+    <Compile Include="05_ModulePattern\04_ExportAnonymousObject\app.js" />
+    <Compile Include="05_ModulePattern\04_ExportAnonymousObject\buz.js" />
+    <Compile Include="05_ModulePattern\05_ExportNamedObject\app.js" />
+    <Compile Include="05_ModulePattern\05_ExportNamedObject\baz.js" />
+    <Compile Include="05_ModulePattern\06_ExportAnonymousPrototype\app.js" />
+    <Compile Include="05_ModulePattern\06_ExportAnonymousPrototype\doo.js" />
+    <Compile Include="05_ModulePattern\07_ExportNamedPrototype\app.js" />
+    <Compile Include="05_ModulePattern\07_ExportNamedPrototype\qux.js" />
+    <Compile Include="06_ModuleCaching\app.js" />
+    <Compile Include="06_ModuleCaching\foo.js" />
+    <Compile Include="04_PromisePattern\01_NativePromise\app.js" />
+    <Compile Include="07_EventEmitter\app.js" />
     <Content Include="package.json" />
     <Content Include="README.md" />
   </ItemGroup>
@@ -73,16 +81,21 @@
     <Folder Include="03_Closure\02_ClosureGeneralUseCase\" />
     <Folder Include="03_Closure\03_ClosurePrivateUseCase\" />
     <Folder Include="03_Closure\04_ClosureFaultCase\" />
-    <Folder Include="04_ModulePattern\" />
-    <Folder Include="04_ModulePattern\01_DefineGlobal\" />
-    <Folder Include="04_ModulePattern\02_ExportAnonymousFunction\" />
-    <Folder Include="04_ModulePattern\03_ExportNamedFunction\" />
-    <Folder Include="04_ModulePattern\04_ExportAnonymousObject\" />
-    <Folder Include="04_ModulePattern\05_ExportNamedObject\" />
-    <Folder Include="04_ModulePattern\06_ExportAnonymousPrototype\" />
-    <Folder Include="04_ModulePattern\07_ExportNamedPrototype\" />
-    <Folder Include="05_ModuleCaching\" />
+    <Folder Include="04_PromisePattern\01_NativePromise\" />
+    <Folder Include="04_PromisePattern\02_QPromise\" />
+    <Folder Include="05_ModulePattern\" />
+    <Folder Include="05_ModulePattern\01_DefineGlobal\" />
+    <Folder Include="05_ModulePattern\02_ExportAnonymousFunction\" />
+    <Folder Include="05_ModulePattern\03_ExportNamedFunction\" />
+    <Folder Include="05_ModulePattern\04_ExportAnonymousObject\" />
+    <Folder Include="05_ModulePattern\05_ExportNamedObject\" />
+    <Folder Include="05_ModulePattern\06_ExportAnonymousPrototype\" />
+    <Folder Include="05_ModulePattern\07_ExportNamedPrototype\" />
+    <Folder Include="06_ModuleCaching\" />
     <Folder Include="03_Closure\" />
+    <Folder Include="04_PromisePattern\" />
+    <Folder Include="07_EventEmitter\" />
+    <Folder Include="00_IceBreaking\" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />

@@ -30,14 +30,14 @@ module.exports = {
 var getStrawHatCrew = function (query) {
 	
 	return [
-		{ name: 'Luffy',	position: 'Captine' }, 
-		{ name: 'Zoro',		position: 'Swordsman' }, 
-		{ name: 'Nami',		position: 'Navigator' },
-		{ name: 'Usopp',	position: 'Sniper' }, 
-		{ name: 'Sanji',	position: 'Cook' }, 
-		{ name: 'Chopper',	position: 'Doctor' },
-		{ name: 'Robin',	position: 'Archaeologist' }, 
-		{ name: 'Franky',	position: 'Shipwright' }, 
-		{ name: 'Brook',	position: 'Musician' }
+		{ no: 1,	name: 'Luffy',		position: 'Captine' }, 
+		{ no: 2,	name: 'Zoro',		position: 'Swordsman' }, 
+		{ no: 3,	name: 'Nami',		position: 'Navigator' },
+		{ no: 4,	name: 'Usopp',		position: 'Sniper' }, 
+		{ no: 5,	name: 'Sanji',		position: 'Cook' }, 
+		{ no: 6,	name: 'Chopper',	position: 'Doctor' },
+		{ no: 7,	name: 'Robin',		position: 'Archaeologist' }, 
+		{ no: 8,	name: 'Franky',		position: 'Shipwright' }, 
+		{ no: 9,	name: 'Brook',		position: 'Musician' }
 	];
 };

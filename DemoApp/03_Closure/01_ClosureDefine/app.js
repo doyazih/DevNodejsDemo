@@ -1,4 +1,6 @@
-﻿function clouserFunction() {
+﻿
+
+function clouserFunction() {
 	var value = 'Hello closure';
 	function showValue() {
 		console.log(value);
