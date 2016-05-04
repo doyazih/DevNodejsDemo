@@ -12,7 +12,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>c7b5b5c4-ff65-47be-992f-2d32d7bc3ed6</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>00_IceBreaking\04_Test.js</StartupFile>
+    <StartupFile>05_ModulePattern\08_ModuleCaching\app.js</StartupFile>
     <StartWebBrowser>False</StartWebBrowser>
     <SearchPath>
     </SearchPath>
@@ -62,8 +62,8 @@
     <Compile Include="05_ModulePattern\06_ExportAnonymousPrototype\doo.js" />
     <Compile Include="05_ModulePattern\07_ExportNamedPrototype\app.js" />
     <Compile Include="05_ModulePattern\07_ExportNamedPrototype\qux.js" />
-    <Compile Include="06_ModuleCaching\app.js" />
-    <Compile Include="06_ModuleCaching\foo.js" />
+    <Compile Include="05_ModulePattern\08_ModuleCaching\app.js" />
+    <Compile Include="05_ModulePattern\08_ModuleCaching\foo.js" />
     <Compile Include="04_PromisePattern\01_NativePromise\app.js" />
     <Compile Include="07_EventEmitter\app.js" />
     <Content Include="package.json" />
@@ -91,7 +91,7 @@
     <Folder Include="05_ModulePattern\05_ExportNamedObject\" />
     <Folder Include="05_ModulePattern\06_ExportAnonymousPrototype\" />
     <Folder Include="05_ModulePattern\07_ExportNamedPrototype\" />
-    <Folder Include="06_ModuleCaching\" />
+    <Folder Include="05_ModulePattern\08_ModuleCaching\" />
     <Folder Include="03_Closure\" />
     <Folder Include="04_PromisePattern\" />
     <Folder Include="07_EventEmitter\" />
