@@ -4,4 +4,4 @@ module.exports = function () {
     console.log('Running module');
 };
 
-console.log('End - module loaded')
+console.log('End - module loaded');
